@@ -230,8 +230,9 @@ module "repo-moc-aws" {
   }
 
   teams = {
-    ops-core   = "admin"
-    ops-collab = "triage"
+    ops-core         = "admin"
+    ops-collab       = "triage"
+    open-accelerator = "triage"
   }
 }
 
@@ -759,15 +760,14 @@ module "repo-pure-cosi" {
 module "repo-moc-services-config" {
   source      = "./modules/common_repository"
   name        = "moc-services-config"
-  description = "COSI driver for everpure flashblade"
+  description = "Management of moc-services EKS cluster"
   template = {
     owner      = "CCI-MOC"
     repository = "moc-template"
   }
 
-  labels = {
-    "github_actions" = { color = "000000", description = "Pull requests that update GitHub Actions code" }
-    "dependencies"   = { color = "0366d6", description = "Pull requests that update a dependency file" }
+  teams = {
+    "open-accelerator" = "push"
   }
 }
 
@@ -823,5 +823,15 @@ module "repo-oac-user-docs" {
   pages = {
     cname      = "docs.oac.massopen.cloud"
     build_type = "workflow"
+  }
+}
+
+module "repo-moc-github" {
+  source      = "./modules/common_repository"
+  name        = "moc-github"
+  description = "OpenTofu configuration for managing CCI-MOC github organization"
+
+  teams = {
+    "ops-core" = "push"
   }
 }
