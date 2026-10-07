@@ -490,6 +490,7 @@ module "repo-openshift-usage-scripts" {
   teams = {
     "open-source-contributors" = "triage"
     "redhat"                   = "maintain"
+    "ops-core"                 = "push"
   }
 
   labels = {
