@@ -354,8 +354,22 @@ module "repo-moc-issues" {
     "VM"                                     = { color = "b70a00", description = "" }
     "website"                                = { color = "334A9E", description = "" }
     "open-accelerator"                       = { color = "0e8a16", description = "Open Accelerator environment" }
-    "NIST 800-171"                           = { color = "aaaaaa" }
     "NIST 800-53"                            = { color = "76cf17", description = "NIST 800-53 compliance related" }
+    "NIST 800-171"                           = { color = "aaaaaa", description = "NIST 800-171 compliance related" }
+    "NIST AC"                                = { color = "376dde", description = "1 ID 2 Perm 3 CUI 4 Privsep 5-7 Least 8/10/11 Lock 9 Notice 12-15 VPN 16-19 Mob 20 VDI 21 USB 22 Pub" }
+    "NIST AT"                                = { color = "187dc7", description = "171: 3.2 AWARENESS AND TRAINING 3.2.1 Awareness, 3.2.2 Training, 3.2.3 Insider" }
+    "NIST AU"                                = { color = "e8d3ad", description = "171: 3.3 AUDIT AND ACCOUNTABILITY 3.3.1 Audit log, 3.3.2 Audit log identities, 3.3.7 NTP" }
+    "NIST CA"                                = { color = "c90d49", description = "171: 3.12 SECURITY ASSESSMENT fka Cert and Accred 3.12.1 Meta 3.12.2 POAM 3.12.3 ConMon 3.12.4 SSP" }
+    "NIST CM"                                = { color = "cc8b1b", description = "171: 3.4.1 Repo 3.4.2 Harden 3.4.3 CCB/Git 3.4.4 PR 3.4.5 Gitop 3.4.6/7/8 Minimal 3.4.9 User install" }
+    "NIST IA"                                = { color = "9b91e0", description = "171: 3.5 IDENTIFICATION AND AUTHENTICATION 3.5.1 Who, 3.5.2 Authenticate, 3.5.3 MFA" }
+    "NIST IR"                                = { color = "60b4a9", description = "171: 3.6 INCIDENT RESPONSE 3.6.1 Do it, 3.6.2 Who, 3.6.3 Test" }
+    "NIST MA"                                = { color = "8dec25", description = "171: 3.7 MAINTENANCE 3.7.1 Do it, 3.7.2 Tool, 3.7.3 Sanitize, 3.7.4 Verify, 3.7.5 MFA, 3.7.6 Vendor" }
+    "NIST MP"                                = { color = "856484", description = "171: 3.8 MEDIA PROTECTION 3.8.1 Catalog, lock, encrypt 3.8.2 Users 3.8.3 Sanitize" }
+    "NIST PE"                                = { color = "598b2a", description = "171: 3.10 PHYSICAL PROTECTION (53: PHY + ENV) 3.10.1 Equipment 3.10.2 Facility 3.10.6 WFH" }
+    "NIST PS"                                = { color = "e2acfb", description = "171: 3.9 PERSONNEL SECURITY 3.9.1 Background Check 3.9.2 Firing" }
+    "NIST RA"                                = { color = "e2d4e2", description = "171: 3.11 RISK ASSESSMENT 3.11.1 Assess, 3.11.2 Vulnerability scan, 3.11.3 Vulnerability remediate" }
+    "NIST SC"                                = { color = "0aa841", description = "171: 3.13 SYSTEM AND COMMUNICATIONS PROTECTION 3.13.1 Firewall/Virt/Crypt 3.13.2 SDLC/Security Eng" }
+    "NIST SI"                                = { color = "d08efd", description = "171: 3.14 SYSTEM AND INFORMATION INTEGRITY 3.14.1 Patch, 3.14.2 SIEM/EDR/AV, 3.14.3 CVE" }
     "HIPAA"                                  = { color = "8951ec", description = "HIPAA compliance related" }
   }
 }
