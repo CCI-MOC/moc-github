@@ -36,7 +36,7 @@ jobs:
           private-key: ${{ secrets.CONFIG_APP_SECRET }}
           owner: ${{ github.repository_owner }}
 
-      - uses: aws-actions/configure-aws-credentials@v5
+      - uses: aws-actions/configure-aws-credentials@v6
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: us-east-1
