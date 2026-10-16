@@ -537,23 +537,31 @@ module "repo-openstack-billing-from-db" {
 module "repo-ops-docs" {
   source      = "./modules/common_repository"
   name        = "ops-docs"
-  description = "Operational policies and practices documentation for the Mass Open Cloud"
+  description = "Operational documentation for the Mass Open Cloud"
+
+  branch_protection = {
+    required_reviews       = 2
+    require_linear_history = true
+    required_status_checks = [
+      "pre-commit",
+    ]
+  }
 
   teams = {
-    "nercpis"  = "pull"
-    "ops-core" = "admin"
+    "ops-core"         = "admin"
+    "open-accelerator" = "push"
   }
 
   labels = {
-    "accepted"            = { color = "ededed", description = "" }
-    "added_post_planning" = { color = "ccff4c", description = "" }
-    "needs_description"   = { color = "ededed", description = "" }
-    "size/extra large"    = { color = "5319e7", description = "Not been done before, new research, lot of time, risks to finishing in sprint, require extra help." }
-    "size/extra small"    = { color = "9BCC95", description = "Most requirements are understood, relatively easy, likely completed in a day or less." }
-    "size/large"          = { color = "16AE23", description = "Similar work done, complex, often requires assistance, commonly largest size done in sprint." }
-    "size/medium"         = { color = "103AD3", description = "Similar work has been done before, it is clear what needs to be done, a few steps beyond a small." }
-    "size/milestone"      = { color = "24653B", description = "needs to be broken down into multiple issues and a milestone created for it" }
-    "size/small"          = { color = "c5def5", description = "Small thought and effort required, similar work has been done, or extra small with small unknown." }
+    "ops-adr"    = { color = "276CF5", description = "This is an arthiectural decision record" }
+    "ops-doc"    = { color = "27F5B0", description = "This is technical documentation" }
+    "ops-policy" = { color = "F5B027", description = "This is a policy document" }
+    "ops-change" = { color = "F54927", description = "This is a production change request" }
+  }
+
+  pages = {
+    cname      = "ops-docs.massopen.cloud"
+    build_type = "workflow"
   }
 }
 
