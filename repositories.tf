@@ -163,10 +163,6 @@ module "repo-invoicing-private-data" {
     "ops-core"                 = "maintain"
   }
 
-  users = {
-    "QuanMPhm" = "admin"
-  }
-
   labels = {
     "MOC 1.0" = { color = "9f70a7", description = "" }
   }
