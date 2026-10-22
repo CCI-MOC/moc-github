@@ -1,4 +1,3 @@
-
 module "repo-access-requests" {
   source      = "./modules/common_repository"
   name        = "access-requests"
@@ -99,10 +98,6 @@ module "repo-documentation" {
   name        = "documentation"
   description = "This is where we host all MOC documentation"
 
-  teams = {
-    "ops-core" = "admin"
-  }
-
   labels = {
     "accepted"          = { color = "ededed", description = "" }
     "needs_description" = { color = "ededed", description = "" }
@@ -139,7 +134,6 @@ module "repo-invoicing" {
   teams = {
     "moc-openshift-people"     = "triage"
     "open-source-contributors" = "triage"
-    "ops-core"                 = "maintain"
   }
 
   labels = {
@@ -160,7 +154,6 @@ module "repo-invoicing-private-data" {
     "nercdev"                  = "push"
     "nercpis"                  = "pull"
     "open-source-contributors" = "pull"
-    "ops-core"                 = "maintain"
   }
 
   users = {
@@ -193,7 +186,6 @@ module "repo-lsvd-rbd" {
   has_wiki    = true
 
   teams = {
-    "ops-core"         = "push"
     "storage-research" = "maintain"
   }
   users = {
@@ -234,7 +226,6 @@ module "repo-moc-aws" {
   }
 
   teams = {
-    ops-core         = "admin"
     ops-collab       = "triage"
     open-accelerator = "push"
   }
@@ -244,10 +235,6 @@ module "repo-moc-dns" {
   source      = "./modules/common_repository"
   name        = "moc-dns"
   description = "DNS configuration for the Mass Open Cloud"
-
-  teams = {
-    "ops-core" = "admin"
-  }
 }
 
 module "repo-moc-infra-config" {
@@ -258,7 +245,6 @@ module "repo-moc-infra-config" {
   teams = {
     "moc-openshift-people"     = "push"
     "open-source-contributors" = "triage"
-    "ops-core"                 = "push"
   }
 
   labels = {
@@ -281,7 +267,6 @@ module "repo-moc-issues" {
     "ai-ivp-bastion-reviewers" = "push"
     "marcomm"                  = "triage"
     "ops-collab"               = "triage"
-    "ops-core"                 = "admin"
     "redhat"                   = "maintain"
   }
 
@@ -383,10 +368,6 @@ module "repo-moc-status" {
   name        = "moc-status"
   description = "MOC service status page"
   has_issues  = false
-
-  teams = {
-    "ops-core" = "push"
-  }
 }
 
 module "repo-moc-template" {
@@ -394,10 +375,6 @@ module "repo-moc-template" {
   name        = "moc-template"
   description = "Template repository for the CCI-MOC GitHub organization"
   is_template = true
-
-  teams = {
-    "ops-core" = "push"
-  }
 }
 
 module "repo-moca-requests" {
@@ -408,7 +385,6 @@ module "repo-moca-requests" {
 
   teams = {
     "moca-request-workers" = "triage"
-    "ops-core"             = "admin"
     "redhat"               = "maintain"
   }
 
@@ -437,7 +413,6 @@ module "repo-nerc-rates" {
 
   teams = {
     "open-source-contributors" = "triage"
-    "ops-core"                 = "maintain"
   }
 
   labels = {
@@ -463,10 +438,6 @@ module "repo-networking-ansible" {
   source      = "./modules/common_repository"
   name        = "networking-ansible"
   description = "OpenStack ML2 mechanism driver using Ansible Networking"
-
-  teams = {
-    "ops-core" = "maintain"
-  }
 }
 
 module "repo-oct-powermon" {
@@ -479,10 +450,6 @@ module "repo-openshift-acct-mgt" {
   source      = "./modules/common_repository"
   name        = "openshift-acct-mgt"
   description = "REST API for managing Users, Namespaces and ResourceQuotas on OpenShift"
-
-  teams = {
-    "ops-core" = "admin"
-  }
 
   labels = {
     "AAA Test"          = { color = "e99695", description = "" }
@@ -508,7 +475,6 @@ module "repo-openshift-usage-scripts" {
   teams = {
     "open-source-contributors" = "triage"
     "redhat"                   = "maintain"
-    "ops-core"                 = "push"
   }
 
   labels = {
@@ -527,7 +493,6 @@ module "repo-openstack-billing-from-db" {
 
   teams = {
     "open-source-contributors" = "triage"
-    "ops-core"                 = "triage"
   }
 
   labels = {
@@ -552,7 +517,6 @@ module "repo-ops-docs" {
   }
 
   teams = {
-    "ops-core"         = "admin"
     "open-accelerator" = "push"
   }
 
@@ -582,7 +546,6 @@ module "repo-ops-issues" {
     "okd"                      = "triage"
     "open-source-contributors" = "triage"
     "ops-collab"               = "push"
-    "ops-core"                 = "admin"
     "redhat"                   = "maintain"
   }
 
@@ -632,7 +595,6 @@ module "repo-ops-private" {
 
   teams = {
     "communications" = "triage"
-    "ops-core"       = "maintain"
   }
 
   labels = {
@@ -762,10 +724,6 @@ module "repo-moc-private" {
   source     = "./modules/common_repository"
   name       = "moc-private"
   visibility = "private"
-
-  teams = {
-    "ops-core" = "maintain"
-  }
 }
 
 module "repo-pure-cosi" {
@@ -776,7 +734,6 @@ module "repo-pure-cosi" {
   teams = {
     "open-source-contributors" = "pull"
     "ops-collab"               = "pull"
-    "ops-core"                 = "pull"
   }
 
   users = {
@@ -857,8 +814,4 @@ module "repo-moc-github" {
   source      = "./modules/common_repository"
   name        = "moc-github"
   description = "OpenTofu configuration for managing CCI-MOC github organization"
-
-  teams = {
-    "ops-core" = "push"
-  }
 }
