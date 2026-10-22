@@ -814,4 +814,12 @@ module "repo-moc-github" {
   source      = "./modules/common_repository"
   name        = "moc-github"
   description = "OpenTofu configuration for managing CCI-MOC github organization"
+
+  branch_protection = {
+    required_reviews = 2
+    required_status_checks = [
+      "pre-commit",
+    ]
+    require_linear_history = true
+  }
 }
