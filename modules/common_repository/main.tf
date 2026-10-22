@@ -23,6 +23,12 @@ locals {
     var.include_default_labels ? local.default_labels : {},
     var.labels
   )
+
+  default_teams = {
+    "ops-core" = "push"
+  }
+
+  all_teams = merge(local.default_teams, var.teams)
 }
 
 resource "github_repository" "this" {
@@ -71,7 +77,7 @@ resource "github_repository_collaborators" "this" {
   repository = github_repository.this.name
 
   dynamic "team" {
-    for_each = var.teams
+    for_each = local.all_teams
     content {
       team_id    = team.key
       permission = team.value
