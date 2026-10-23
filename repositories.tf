@@ -697,7 +697,7 @@ module "repo-oac-apps" {
   }
 
   branch_protection = {
-    required_reviews       = 1
+    required_reviews       = 2
     require_linear_history = true
     required_status_checks = [
       "pre-commit",
