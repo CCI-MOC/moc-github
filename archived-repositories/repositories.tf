@@ -1187,14 +1187,14 @@ resource "github_repository" "repo-moc-wp-plugin" {
 }
 
 resource "github_repository" "repo-adjutant-moc" {
-  archived = true
+  archived    = true
   name        = "adjutant-moc"
   description = "MOC Onboarding plugin for Adjutant"
   has_wiki    = true
 }
 
 resource "github_repository" "repo-horizon-onboarding" {
-  archived = true
+  archived    = true
   name        = "horizon-onboarding"
   description = "Horizon-based Dashboard for MOC Onboarding"
 }
