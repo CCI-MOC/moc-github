@@ -699,6 +699,7 @@ module "repo-oac-apps" {
 
   teams = {
     open-accelerator = "maintain"
+    ops-core         = "push"
   }
 
   branch_protection = {
