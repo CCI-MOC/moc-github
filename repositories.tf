@@ -828,3 +828,15 @@ module "repo-moc-github" {
     require_linear_history = true
   }
 }
+
+module "repo-ansible-stateful-switches" {
+  source       = "./modules/common_repository"
+  name         = "ansible-stateful-switches"
+  description  = "Stateful switches collection for ansible"
+  homepage_url = "https://galaxy.ansible.com/ui/repo/published/cci_moc/stateful_switches/"
+
+  branch_protection = {
+    required_reviews       = 2
+    require_linear_history = true
+  }
+}
