@@ -239,7 +239,7 @@ module "repo-moc-aws" {
   description = "OpenTofu management of AWS resources for the Mass Open Cloud"
 
   branch_protection = {
-    required_reviews = 1
+    required_reviews = 2
     required_status_checks = [
       "pre-commit",
       "plan"
