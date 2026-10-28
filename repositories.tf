@@ -522,7 +522,7 @@ module "repo-ops-docs" {
   }
 
   teams = {
-    "open-accelerator" = "push"
+    "ops-docs-writers" = "push"
   }
 
   labels = merge(local.compliance_labels, {

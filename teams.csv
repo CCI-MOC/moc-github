@@ -52,3 +52,7 @@ all-members,All organization members,closed,
 open-accelerator,People working on open-accelerator project,closed,
 open-accelerator-admins,Grants admin access to OA clusters,closed,
 keycloak-workers,People working with the MOC Keycloak instance,closed,
+ops-docs-writers,People with write access to ops-docs repository,closed,
+ops-docs-writers-bu,BU IT people with write access to ops-docs repository,closed,ops-docs-writers
+ops-docs-writers-moc,MOC people with write access to ops-docs repository,closed,ops-docs-writers
+ops-docs-writers-redhat,Red Hat people with write access to ops-docs-repository,closed,ops-docs-writers
