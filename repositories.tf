@@ -690,6 +690,11 @@ module "repo-open-accelerator-infra" {
   teams = {
     open-accelerator = "maintain"
   }
+
+  branch_protection = {
+    required_reviews       = 2
+    require_linear_history = true
+  }
 }
 
 module "repo-oac-apps" {
