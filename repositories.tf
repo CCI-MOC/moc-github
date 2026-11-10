@@ -287,6 +287,7 @@ module "repo-moc-issues" {
   teams = {
     "ai-ivp"                   = "maintain"
     "ai-ivp-bastion-reviewers" = "push"
+    "all-members"              = "pull"
     "marcomm"                  = "triage"
     "ops-collab"               = "triage"
     "redhat"                   = "maintain"
