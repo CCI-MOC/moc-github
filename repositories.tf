@@ -367,7 +367,7 @@ module "repo-moc-issues" {
     "VM"                                     = { color = "b70a00", description = "" }
     "website"                                = { color = "334A9E", description = "" }
     "open-accelerator"                       = { color = "0e8a16", description = "Open Accelerator environment" }
-})
+  })
 }
 
 module "repo-moc-status" {
