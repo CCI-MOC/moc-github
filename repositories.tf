@@ -355,8 +355,13 @@ module "repo-moc-issues" {
     "spike"                                  = { color = "C3DB0B", description = "evaluating the impact new technology has on the current implementation" }
     "standup"                                = { color = "7CCCF3", description = "Issues that need to be discussed in the standup meeting with other teammates." }
     "Storage"                                = { color = "5bdae8", description = "" }
-    "STR: MOC 1.5 - Interim HW Ops"          = { color = "6a74ec", description = "" }
-    "STR: MOC 2.0 - Platform Serv"           = { color = "9d11a0", description = "" }
+    "STR: MOC 1.5 - Interim HW Ops"          = { color = "6a74ec", description = "Issues associated with Stream MOC 1.5 - Interim HW Ops" }
+    "STR: MOC 2.0 - Platform Serv"           = { color = "9d11a0", description = "Issues associated with Stream MOC 2.0 - Platform Serv" }
+    "STR: MOC ALL - Governance"               = { color = "#e0f06a", description = "Issues Associated with Stream MOC ALL - Governance" }
+    "STR: MOC ALL - Ops Transition"            = { color = "#be74d7", description = "Issues associated with Steam MOC ALL - Ops Transition" }
+    "STR: MOC ALL - Pending Proj"            = { color = "#0275dd", description = "Issues associated with Stream MOC ALL - Pending Proj" }
+    "STR: MOC 2.0 - Compliance Auth"         = { color = "#c24216", description = "Issues Associated with Stream MOC 2.0 - Compliance Auth" }
+    "MOC ALL - Red Hat Licensing"           ={ color = "#c24216", description = "Issues Associated with Stream MOC ALL - Red Hat Licensing" }
     "support-ticket"                         = { color = "006b75", description = "" }
     "Technical Debt"                         = { color = "b6ff32", description = "" }
     "techsquare"                             = { color = "d93f0b", description = "" }
