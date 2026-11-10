@@ -355,6 +355,8 @@ module "repo-moc-issues" {
     "spike"                                  = { color = "C3DB0B", description = "evaluating the impact new technology has on the current implementation" }
     "standup"                                = { color = "7CCCF3", description = "Issues that need to be discussed in the standup meeting with other teammates." }
     "Storage"                                = { color = "5bdae8", description = "" }
+    "STR: MOC 1.5 - Interim HW Ops"          = { color = "6a74ec", description = "" }
+    "STR: MOC 2.0 - Platform Serv"           = { color = "9d11a0", description = "" }
     "support-ticket"                         = { color = "006b75", description = "" }
     "Technical Debt"                         = { color = "b6ff32", description = "" }
     "techsquare"                             = { color = "d93f0b", description = "" }
@@ -365,7 +367,7 @@ module "repo-moc-issues" {
     "VM"                                     = { color = "b70a00", description = "" }
     "website"                                = { color = "334A9E", description = "" }
     "open-accelerator"                       = { color = "0e8a16", description = "Open Accelerator environment" }
-  })
+})
 }
 
 module "repo-moc-status" {
