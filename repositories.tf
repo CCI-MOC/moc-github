@@ -71,6 +71,10 @@ module "repo-ansible-switches" {
   name        = "ansible-switches"
   description = "Ansible site for MOC/OCT switches"
 
+  branch_protection = {
+    required_reviews = 2
+  }
+
   teams = {
     "redhat" = "maintain"
   }
