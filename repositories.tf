@@ -362,7 +362,7 @@ module "repo-moc-issues" {
     "STR: MOC ALL - Ops Transition"          = { color = "#be74d7", description = "Issues associated with Steam MOC ALL - Ops Transition" }
     "STR: MOC ALL - Pending Proj"            = { color = "#0275dd", description = "Issues associated with Stream MOC ALL - Pending Proj" }
     "STR: MOC 2.0 - Compliance Auth"         = { color = "#c24216", description = "Issues Associated with Stream MOC 2.0 - Compliance Auth" }
-    "MOC ALL - Red Hat Licensing"            = { color = "#c24216", description = "Issues Associated with Stream MOC ALL - Red Hat Licensing" }
+    "STR: MOC ALL - Red Hat Licensing"       = { color = "#c24216", description = "Issues Associated with Stream MOC ALL - Red Hat Licensing" }
     "support-ticket"                         = { color = "006b75", description = "" }
     "Technical Debt"                         = { color = "b6ff32", description = "" }
     "techsquare"                             = { color = "d93f0b", description = "" }
