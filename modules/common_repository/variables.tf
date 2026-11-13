@@ -103,6 +103,13 @@ variable "labels" {
     description = optional(string, "")
   }))
   default = {}
+
+  validation {
+    condition = alltrue([
+      for label in values(var.labels) : can(regex("^[0-9a-fA-F]{6}$", label.color))
+    ])
+    error_message = "Label color must be a 6-character hex code without a leading '#' (e.g. \"d73a4a\")."
+  }
 }
 
 variable "include_default_labels" {
