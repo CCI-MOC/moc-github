@@ -794,7 +794,7 @@ module "repo-moc-keycloak" {
   }
 
   branch_protection = {
-    required_reviews = 1
+    required_reviews = 2
     required_status_checks = [
       "pre-commit",
       "bootstrap"
