@@ -72,7 +72,7 @@ module "repo-ansible-switches" {
   description = "Ansible site for MOC/OCT switches"
 
   teams = {
-    "redhat" = "maintain"
+    "infra-workers" = "push"
   }
 
   labels = {
@@ -131,8 +131,8 @@ module "repo-everpure-moc" {
   name        = "everpure-moc"
   description = "Repo housing instructions and manifests for deploying and managing Pure storage resources in the MOC"
 
-  users = {
-    "DanNiESh" = "push"
+  teams = {
+    "storage-workers" = "push"
   }
 }
 
@@ -248,8 +248,8 @@ module "repo-moc-aws" {
   }
 
   teams = {
-    ops-collab       = "triage"
-    open-accelerator = "push"
+    ops-collab    = "triage"
+    infra-workers = "push"
   }
 }
 
@@ -257,6 +257,10 @@ module "repo-moc-dns" {
   source      = "./modules/common_repository"
   name        = "moc-dns"
   description = "DNS configuration for the Mass Open Cloud"
+
+  teams = {
+    "infra-workers" = "push"
+  }
 }
 
 module "repo-moc-infra-config" {
@@ -487,7 +491,6 @@ module "repo-openshift-usage-scripts" {
 
   teams = {
     "open-source-contributors" = "triage"
-    "redhat"                   = "maintain"
   }
 
   labels = {
