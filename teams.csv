@@ -56,3 +56,5 @@ ops-docs-writers,People with write access to ops-docs repository,closed,
 ops-docs-writers-bu,BU IT people with write access to ops-docs repository,closed,ops-docs-writers
 ops-docs-writers-moc,MOC people with write access to ops-docs repository,closed,ops-docs-writers
 ops-docs-writers-redhat,Red Hat people with write access to ops-docs-repository,closed,ops-docs-writers
+infra-workers,"Write access to MOC infrastructure repos (DNS, switches, AWS)",closed,
+storage-workers,Write access to MOC storage repos (everpure-moc),closed,
